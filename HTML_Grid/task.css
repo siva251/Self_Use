@@ -1,6 +1,8 @@
 .container{
     display:grid;
+    /* here auto-fill will use to make the images responsive to all the screens, Incase if we need to make the content response, then we can use auto-fit - grid-template-columns: repeat(auto-fit, 250px); */
     grid-template-columns: repeat(auto-fill, 250px);
+    /* This property will accept minmax value, the first one will be minimum value and second will be maximum value - grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); */
     justify-content: center;
     gap: 20px;
 }
