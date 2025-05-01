@@ -1,0 +1,20 @@
+.container{
+    display: flex;
+    border: 2px solid black;
+    justify-content: center;
+    align-items: center;
+    min-height:10vh ;
+    gap: 20px;
+    flex-wrap: wrap;
+    /*Flex will have shrink and grow properties */
+    /*Flex shrink will make the content to shrink or not. By default it set to 1, so the items will be shrinked based on srcn size  */
+    flex-shrink: 0;
+    /* Flex grow will make the content to grow or not. By default it set to 0, so the items will not be grown, if we set as 1, it will grow */
+    flex-grow: 1;
+    
+}
+.items img{
+    width: 100%;
+    height: auto;
+}
+
