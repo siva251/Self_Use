@@ -1,0 +1,84 @@
+.header {
+  display: flex;
+  justify-content: center;
+  top: 0;
+  padding: 2%;
+  position: sticky;
+}
+.footer {
+  display: flex;
+  justify-content: center;
+  bottom: 0;
+  position: fixed;
+  padding: 2%;
+  width: 100%;
+}
+.container {
+  /* Grid Layout Module offers a grid-based layout system, with rows and columns */
+  display: grid;
+  /* This property will give the  column count, here we can give column width in px, fr - fraction, auto */
+  grid-template-columns: repeat(5,auto ); /*  grid-template-columns: 2fr 2fr 2fr (or) grid-template-columns: auto auto auto*/
+  /* This property will give the  row count, here we can give row width in px, fr - fraction, auto */
+  grid-template-rows: repeat(5, auto) ; /* grid-template-rows : repeat (3, auto) */
+}
+.items {
+  border: 1px solid burlywood;
+  background-color: antiquewhite;
+  padding: 2%;
+}
+.item3{
+   /*To Move the specific items to a particular column, this will property will be used */
+   /* Grid column will have the second parameter for the size - (Current column (10) + Needed column (2)) = 12 - optional*/
+grid-column: 4/6;
+}
+.item5{
+  /*To Move the specific items to a particular row, this will property will be used */
+  /* Grid row will have the second parameter for the size - (current row + needed row) - optional */
+grid-row: 2/4;
+}
+.item8{
+  grid-row: 3;
+}
+
+/* ********************************************* Next Leve : Customization ********************************************* */
+
+.container2{
+  display: grid;
+  grid-template-columns: repeat(5, auto);
+  grid-template-rows: repeat(5,auto);
+}
+.item31{
+  /* Grid area is used as a replacement of grid column and row, this property will have 4 parameters -
+   grid-area : row starting / column starting / row ending / column ending - all this values will be handled through grid-area*/
+  grid-area: 2/2/4/2;
+}
+
+/* Using grid template area You can name grid items by using the grid-area property, and then reference to the name in the grid-template-areas property. */
+.container3{
+  display: grid;
+  grid-template-areas: 
+" item18 . . . item17"
+" . item15 . . item17"
+" . item16 item16 item16 ."
+" item20 . . . item19"
+;
+}
+
+.item15{
+  grid-area: item15;
+}
+.item16{
+  grid-area: item16;
+}
+.item17{
+  grid-area: item17;
+}
+.item18{
+  grid-area: item18;
+}
+.item19{
+  grid-area: item19;
+}
+.item20{
+  grid-area: item20;
+}
