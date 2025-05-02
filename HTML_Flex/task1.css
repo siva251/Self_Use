@@ -1,0 +1,9 @@
+.container{
+    columns: 3 400px;
+    column-gap: 10em;
+}
+.container img{
+    display: block;
+    margin-bottom: 1em;
+    width: 400px;
+}
