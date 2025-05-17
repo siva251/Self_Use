@@ -45,6 +45,7 @@ const ComponentD = () => {
     <>
       <div className="box">
         <h3>Component D</h3>
+      <p>Bye {user}</p>
       </div>
     </>
   );
