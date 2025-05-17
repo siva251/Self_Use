@@ -8,6 +8,7 @@ const Sidebar = () => {
             <CustomLink to="/Hooks/useContext">UseContext</CustomLink>
             <CustomLink to="/Hooks/useMemo">UseMemo</CustomLink>
             <CustomLink to="/Hooks/useCallback">UseCallback</CustomLink>
+            <CustomLink to="/Hooks/reactMemo">ReactMemo</CustomLink>
 
         </>
     )

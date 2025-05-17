@@ -29,6 +29,9 @@
                     <li> In the script file you can see EventListener for input field, that can we trigger a function call whenever a single character is typed, by that time if a request call is made for single character that will leads to performance issue</li>
                     <li>To overcome this we can use Debounce with a time delay after typing.</li>
                 </ul>
+                Function will be called Only once <stron>after</stron> the user stops triggering the event
+                <br/>
+                Example : Search inputs
             </div>
         </div>
         <br/>
@@ -40,6 +43,9 @@
                     <li> It ensures a function is called at most once in a specified time interval.</li>
                     <li>This is useful for improving performance and preventing excessive function calls, especially when dealing with events that fire rapidly, such as scrolling, resizing, or mouse movement. </li>
                 </ul>
+                Function will be called Repeatedly, but not more than once per time window
+                 <br/>
+                Example : Mouse movements, Button clicks
             </div>
         </div>
         <script src="script.js"></script>
