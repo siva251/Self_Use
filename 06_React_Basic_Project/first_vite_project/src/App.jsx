@@ -14,6 +14,7 @@ import UseContext from './Components/CommonHooks/UseContext'
 import UseMemo from './Components/CommonHooks/UseMemo'
 import UseCallback from './Components/CommonHooks/UseCallback'
 import ReactMemo from './Components/CommonHooks/ReactMemo'
+import UseTransition from './Components/CommonHooks/UseTransition'
 
 export default function App() {
 
@@ -35,6 +36,7 @@ export default function App() {
               <Route path='useMemo' element={<UseMemo />}></Route>
               <Route path='useCallback' element={<UseCallback />}></Route>
               <Route path='reactMemo' element={<ReactMemo />}></Route>
+              <Route path='useTransition' element={<UseTransition />}></Route>
             </Route>
             <Route path='/route' element={<Routing />}></Route>
             <Route path="*" element={<NoPage />} />
