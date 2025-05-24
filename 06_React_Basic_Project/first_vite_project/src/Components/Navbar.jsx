@@ -8,6 +8,7 @@ const Navbar = () => {
             <ul>
                 <CustomLink to='/Hooks'>Hooks</CustomLink>
                 <CustomLink to='/route'>Routes</CustomLink>
+                <CustomLink to='/redux'>Redux</CustomLink>
             </ul>
         </nav>
 
