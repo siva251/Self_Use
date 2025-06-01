@@ -6,6 +6,9 @@ const UseContext = () => {
           The useContext hook in React is used to access data from a React Context without having to pass props manually through every level of the component tree.
         </li>
         <li>
+          If a values is updated in the provider, then all the subscribed consumer components will be rerenderd.
+        </li>
+        <li>
           When you have data (like user info, theme, language, etc.) that many components need, passing it down as props becomes messy. useContext helps you avoid "prop drilling" by giving any component access to shared data directly.
         </li>
       </ul>
