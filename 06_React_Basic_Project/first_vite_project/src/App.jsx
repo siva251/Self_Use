@@ -16,6 +16,7 @@ import UseCallback from './Components/CommonHooks/UseCallback'
 import ReactMemo from './Components/CommonHooks/ReactMemo'
 import UseTransition from './Components/CommonHooks/UseTransition'
 import Redux from './Components/Redux'
+import Javascript from './Components/Javascript'
 
 export default function App() {
 
@@ -42,6 +43,7 @@ export default function App() {
             <Route path='/route' element={<Routing />}></Route>
             <Route path="*" element={<NoPage />} />
             <Route path='/redux' element={<Redux />} />
+            <Route path='/javascript' element={<Javascript />} />
           </Routes>
         </div>
       </div>
